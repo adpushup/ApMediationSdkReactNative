@@ -4,9 +4,9 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
-import com.allstudio.apmediationsdk.ApMediationSdk
+import com.adpushup.apmediationsdk.ApMediationSdk
 
-class ApMediationSdkModule(reactContext: ReactApplicationContext) :
+class ApMediationSdkModule(private val reactContext: ReactApplicationContext) :
   ReactContextBaseJavaModule(reactContext) {
 
   override fun getName(): String {
@@ -15,7 +15,7 @@ class ApMediationSdkModule(reactContext: ReactApplicationContext) :
 
   @ReactMethod
   fun enableDebug(status: Boolean) {
-    ApMediationSdk.enableDebug(status)
+    ApMediationSdk.enableDebug(reactContext, status)
   }
 
   companion object {
