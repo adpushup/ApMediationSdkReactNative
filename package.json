@@ -1,6 +1,6 @@
 {
   "name": "@adpushup/ap-mediation-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ap Mediation SDK is a React Native Plugin for Ap Mediation SDK AdMob Adapter. Currently supports Android only. It allows you to integrate AdPushup's Ads into your React Native apps as a Mediation Demand.",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
